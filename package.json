@@ -1,0 +1,40 @@
+{
+  "name": "mihomo-yaml-navigator",
+  "displayName": "Mihomo YAML Navigator",
+  "description": "Navigate Mihomo / Clash YAML by proxy and group names instead of array indexes.",
+  "version": "0.2.0",
+  "publisher": "local-tools",
+  "repository": { "type": "git", "url": "https://github.com/TomatoFryEggs/mihomo-yaml-navigator.git" },
+  "homepage": "https://github.com/TomatoFryEggs/mihomo-yaml-navigator#readme",
+  "bugs": { "url": "https://github.com/TomatoFryEggs/mihomo-yaml-navigator/issues" },
+  "keywords": ["yaml", "mihomo", "clash", "outline", "navigation"],
+  "license": "MIT",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "main": "./dist/extension.js",
+  "activationEvents": ["onLanguage:yaml"],
+  "capabilities": { "untrustedWorkspaces": { "supported": true }, "virtualWorkspaces": { "supported": true } },
+  "contributes": {
+    "views": { "explorer": [{ "id": "mihomoNavigator.tree", "name": "Mihomo 导航" }] },
+    "commands": [
+      { "command": "mihomoNavigator.refresh", "title": "Mihomo: 刷新导航", "icon": "$(refresh)" },
+      { "command": "mihomoNavigator.find", "title": "Mihomo: 按名称跳转", "icon": "$(search)" }
+    ],
+    "menus": { "view/title": [
+      { "command": "mihomoNavigator.refresh", "when": "view == mihomoNavigator.tree", "group": "navigation" },
+      { "command": "mihomoNavigator.find", "when": "view == mihomoNavigator.tree", "group": "navigation" }
+    ] },
+    "configuration": { "title": "Mihomo YAML Navigator", "properties": {
+      "mihomoNavigator.enableDocumentSymbols": { "type": "boolean", "default": false, "description": "另提供原生 Outline / Go to Symbol；与其他 YAML 符号提供器同时启用时可能出现重复目录。侧边栏不受影响。" }
+    } }
+  },
+  "scripts": {
+    "build": "esbuild src/extension.js --bundle --platform=node --target=node18 --external:vscode --outfile=dist/extension.js",
+    "vscode:prepublish": "npm run build",
+    "test": "node --test test/parser.test.js",
+    "test:integration": "node test/run-integration.js",
+    "package": "vsce package --no-dependencies --allow-missing-repository"
+  },
+  "dependencies": { "yaml": "2.9.1" },
+  "devDependencies": { "@vscode/vsce": "4.0.0", "@vscode/test-electron": "3.1.0", "esbuild": "0.25.12" }
+}

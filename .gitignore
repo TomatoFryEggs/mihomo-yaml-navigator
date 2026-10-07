@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.vsix
+.vscode-test/
+*.zip
+*.log
+.env
+.env.*
+.vsce
