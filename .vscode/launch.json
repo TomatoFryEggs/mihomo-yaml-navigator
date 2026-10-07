@@ -1,1 +1,1 @@
-{"version":"0.2.0","configurations":[{"name":"运行 Mihomo 导航扩展","type":"extensionHost","request":"launch","args":["--extensionDevelopmentPath=${workspaceFolder}"],"outFiles":["${workspaceFolder}/dist/**/*.js"]}]}
+{"version":"0.2.1","configurations":[{"name":"运行 Mihomo Outline扩展","type":"extensionHost","request":"launch","args":["--extensionDevelopmentPath=${workspaceFolder}"],"outFiles":["${workspaceFolder}/dist/**/*.js"]}]}

@@ -1,4 +1,6 @@
-# Mihomo YAML Navigator
+# Mihomo Outline
+
+![Mihomo Outline icon](https://raw.githubusercontent.com/TomatoFryEggs/mihomo-yaml-navigator/main/resources/icon.png)
 
 给 Mihomo / Clash YAML 配置提供按名称显示的导航树。最低要求：桌面版 VS Code 1.85。
 
@@ -6,22 +8,22 @@
 
 1. 在 VS Code 中打开扩展面板（macOS `⌘⇧X`，Windows / Linux `Ctrl+Shift+X`）。
 2. 点击扩展面板右上角 `…` → **Install from VSIX… / 从 VSIX 安装…**。
-3. 选择 `mihomo-yaml-navigator-0.2.0.vsix`。
+3. 选择 `mihomo-yaml-navigator-0.2.1.vsix`。
 4. 如果提示重新加载窗口，点击重新加载。
 
 也可以在已配置 `code` 命令的终端执行：
 
 ```sh
-code --install-extension ./mihomo-yaml-navigator-0.2.0.vsix
+code --install-extension ./mihomo-yaml-navigator-0.2.1.vsix
 ```
 
-Marketplace 安装入口：[Mihomo YAML Navigator](https://marketplace.visualstudio.com/items?itemName=TomatoFryEggs.mihomo-yaml-navigator)。也可从 [GitHub Releases](https://github.com/TomatoFryEggs/mihomo-yaml-navigator/releases) 下载 VSIX。正式发布者标识为 `TomatoFryEggs`。
+Marketplace 安装入口：[Mihomo Outline](https://marketplace.visualstudio.com/items?itemName=TomatoFryEggs.mihomo-yaml-navigator)。也可从 [GitHub Releases](https://github.com/TomatoFryEggs/mihomo-yaml-navigator/releases) 下载 VSIX。正式发布者标识为 `TomatoFryEggs`。
 
 若此前安装的是 `local-tools` 本地包，请先卸载旧包，再安装正式版，避免两个扩展同时生成目录。
 
 ## 使用
 
-打开 `.yaml` / `.yml` 配置，在左侧**资源管理器 → Mihomo 导航**中展开目录。无论文件名是否叫 `config.yaml` 都可使用；扩展读取当前编辑器的内容，包括尚未保存的修改。
+打开 `.yaml` / `.yml` 配置，在左侧**资源管理器 → Mihomo Outline**中展开目录。无论文件名是否叫 `config.yaml` 都可使用；扩展读取当前编辑器的内容，包括尚未保存的修改。
 
 ```text
 proxy-providers
@@ -47,8 +49,8 @@ rules
 - 点击 Provider，跳到它的对象键名所在行。
 - 点击 `dns`、`tun`、`rules` 等顶层字段，跳到该字段所在行。
 - 修改配置后自动刷新（200 毫秒防抖）；标题栏刷新按钮可手动刷新。
-- 点击标题栏搜索按钮，或打开命令面板运行 **Mihomo: 按名称跳转**，输入名称搜索。
-- 如侧边栏未显示，运行 **View: Open View… / 视图: 打开视图…**，选择 **Mihomo 导航**。
+- 点击标题栏搜索按钮，或打开命令面板运行 **Mihomo Outline: 按名称跳转**，输入名称搜索。
+- 如侧边栏未显示，运行 **View: Open View… / 视图: 打开视图…**，选择 **Mihomo Outline**。
 
 可以保留 **YAML by Red Hat**。默认不注册原生符号提供器，因此侧边栏可以与它的 Outline 同时使用。
 

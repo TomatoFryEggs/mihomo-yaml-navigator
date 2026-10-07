@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1
+
+- 扩展、侧边栏和命令显示名称统一为 Mihomo Outline。
+- 使用小猫轮廓、导航树与 mihomo 字样的 PNG 图标。
+- 保持扩展 ID、命令 ID 和配置键不变，支持原有正式版升级。
+
 ## 0.2.0
 
 - 递归显示任意顶层字段中的对象与数组，包括 dns、use、rules、Provider 属性。

@@ -1,8 +1,8 @@
 {
   "name": "mihomo-yaml-navigator",
-  "displayName": "Mihomo YAML Navigator",
+  "displayName": "Mihomo Outline",
   "description": "Navigate Mihomo / Clash YAML by proxy and group names instead of array indexes.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "TomatoFryEggs",
   "repository": {
     "type": "git",
@@ -43,19 +43,19 @@
       "explorer": [
         {
           "id": "mihomoNavigator.tree",
-          "name": "Mihomo 导航"
+          "name": "Mihomo Outline"
         }
       ]
     },
     "commands": [
       {
         "command": "mihomoNavigator.refresh",
-        "title": "Mihomo: 刷新导航",
+        "title": "Mihomo Outline: 刷新",
         "icon": "$(refresh)"
       },
       {
         "command": "mihomoNavigator.find",
-        "title": "Mihomo: 按名称跳转",
+        "title": "Mihomo Outline: 按名称跳转",
         "icon": "$(search)"
       }
     ],
@@ -74,7 +74,7 @@
       ]
     },
     "configuration": {
-      "title": "Mihomo YAML Navigator",
+      "title": "Mihomo Outline",
       "properties": {
         "mihomoNavigator.enableDocumentSymbols": {
           "type": "boolean",
@@ -98,5 +98,6 @@
     "@vscode/vsce": "4.0.0",
     "@vscode/test-electron": "3.1.0",
     "esbuild": "0.25.12"
-  }
+  },
+  "icon": "resources/icon.png"
 }

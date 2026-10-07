@@ -75,7 +75,7 @@ function activate(context) {
         };
         return parsed.roots.map(convert);
       }
-    }, { label: 'Mihomo 名称导航' });
+    }, { label: 'Mihomo Outline' });
   };
   context.subscriptions.push(view, emitter,
     vscode.commands.registerCommand('mihomoNavigator.refresh', refresh),

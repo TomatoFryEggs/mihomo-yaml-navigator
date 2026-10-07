@@ -17,4 +17,4 @@
 
 另排除 [Clash Toolkit](https://marketplace.visualstudio.com/items?itemName=LucasBollen.clash-toolkit)：它面向同名 Haskell 硬件描述语言，与代理配置无关。
 
-因此交付本地扩展 **Mihomo YAML Navigator**：独立 TreeView 默认与 Red Hat YAML 共存，原生 DocumentSymbolProvider 作为可选项。实现参考 [VS Code Tree View API](https://code.visualstudio.com/api/extension-guides/tree-view) 和 [yaml 文档及 AST 范围 API](https://eemeli.org/yaml/)。
+因此交付本地扩展 **Mihomo Outline**：独立 TreeView 默认与 Red Hat YAML 共存，原生 DocumentSymbolProvider 作为可选项。实现参考 [VS Code Tree View API](https://code.visualstudio.com/api/extension-guides/tree-view) 和 [yaml 文档及 AST 范围 API](https://eemeli.org/yaml/)。
