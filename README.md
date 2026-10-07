@@ -15,7 +15,9 @@
 code --install-extension ./mihomo-yaml-navigator-0.2.0.vsix
 ```
 
-当前可从 [GitHub Releases](https://github.com/TomatoFryEggs/mihomo-yaml-navigator/releases) 下载 VSIX。Marketplace 上架正在准备中；`local-tools` 是本地包的临时发布者标识。
+Marketplace 安装入口：[Mihomo YAML Navigator](https://marketplace.visualstudio.com/items?itemName=TomatoFryEggs.mihomo-yaml-navigator)。也可从 [GitHub Releases](https://github.com/TomatoFryEggs/mihomo-yaml-navigator/releases) 下载 VSIX。正式发布者标识为 `TomatoFryEggs`。
+
+若此前安装的是 `local-tools` 本地包，请先卸载旧包，再安装正式版，避免两个扩展同时生成目录。
 
 ## 使用
 
